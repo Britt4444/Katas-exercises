@@ -1,9 +1,12 @@
 const multiplicationTable = function(maxValue) {
+  //empty string variable
   let table = '';
+  //loop through starting at 1
   for(let i = 1; i <= maxValue; i++) {
     for(let j = 1; j <= maxValue; j++) {
       table += (i * j) + ' ';
     }
+  //newline outside of nested loop to separate into rows 
     table += '\n'
   }
   return table;
